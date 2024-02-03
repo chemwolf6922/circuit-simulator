@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build":"tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/chemwolf6922/circuit-simulator/issues"
   },
-  "homepage": "https://github.com/chemwolf6922/circuit-simulator#readme"
+  "homepage": "https://github.com/chemwolf6922/circuit-simulator#readme",
+  "type":"module"
 }
