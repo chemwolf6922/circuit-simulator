@@ -3,6 +3,12 @@ import { InputPin, OutputPin } from "../Pin.js";
 import * as NS from "../NetworkState.js";
 
 class Chip7400 extends Chip {
+    info = {
+        name:'7400',
+        description:'Quad 2 input NAND gate',
+        inputPins:['A1','B1','A2','B2','A3','B3','A4','B4'],
+        outputPins:['Y1','Y2','Y3','Y4']
+    };
     A1:InputPin = new InputPin();
     B1:InputPin = new InputPin();
     Y1:OutputPin = new OutputPin();
