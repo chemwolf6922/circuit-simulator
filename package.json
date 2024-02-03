@@ -1,0 +1,19 @@
+{
+  "name": "circuit-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemwolf6922/circuit-simulator.git"
+  },
+  "author": "Feng Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chemwolf6922/circuit-simulator/issues"
+  },
+  "homepage": "https://github.com/chemwolf6922/circuit-simulator#readme"
+}
