@@ -1,10 +1,12 @@
+type ChipInfo = {
+    name:string;
+    description?:string;
+    inputPins:Array<string>;
+    outputPins:Array<string>;
+};
+
 class Chip{
-    info:{
-        name:string;
-        description?:string;
-        inputPins:Array<string>;
-        outputPins:Array<string>;
-    } = {
+    info:ChipInfo = {
         name:'',
         inputPins:[],
         outputPins:[]
@@ -15,3 +17,4 @@ class Chip{
 }
 
 export {Chip};
+export type {ChipInfo};
