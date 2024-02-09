@@ -8,9 +8,12 @@ class ChipToggle extends Chip {
         inputPins:[],
         outputPins:['OUT']
     };
-    OUT:OutputPin = new OutputPin();
+    OUT:OutputPin = new OutputPin(NS.State.LOW);
     set level(level:boolean){
         this.OUT.state = level ? NS.State.HIGH : NS.State.LOW;
+    }
+    get level():boolean{
+        return this.OUT.state === NS.State.HIGH;
     }
 }
 
