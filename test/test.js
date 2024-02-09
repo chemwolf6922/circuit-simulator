@@ -1,13 +1,13 @@
 // @ts-check
-import { Circuit, Connection, ChipSource, Chip7400, stringifyState } from "../build/index.js";
+import { Circuit, Connection, CHIPS, stringifyState } from "../build/index.js";
 
 class TestCircuit extends Circuit {
     source;
     U1;
     constructor(){
         super();
-        this.source = new ChipSource();
-        this.U1 = new Chip7400();
+        this.source = new CHIPS.ChipSource();
+        this.U1 = new CHIPS.Chip7400();
         this.chips.add(this.source);
         this.chips.add(this.U1);
         let connections = [];
