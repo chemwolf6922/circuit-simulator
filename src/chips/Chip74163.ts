@@ -3,7 +3,7 @@ import { InputPin, OutputPin, Pin } from "../Pin.js";
 import * as NS from "../NetworkState.js";
 
 class Chip74163 extends Chip {
-    info = {
+    static info = {
         name: '74163',
         description: '4-bit synchronous counter',
         inputPins: ['CLK', 'NLOAD', 'ENT', 'ENP', 'NCLR', 'A', 'B', 'C', 'D'],

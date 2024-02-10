@@ -3,7 +3,7 @@ import { InputPin, OutputPin } from "../Pin.js";
 import * as NS from "../NetworkState.js";
 
 class Chip7404 extends Chip {
-    info = {
+    static info = {
         name:'7404',
         description:'Hex inverter',
         inputPins:['A1','A2','A3','A4','A5','A6'],

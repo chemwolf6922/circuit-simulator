@@ -3,7 +3,7 @@ import { InputPin } from '../Pin.js';
 import * as NS from '../NetworkState.js';
 
 class ChipMonitor extends Chip {
-    info = {
+    static info = {
         name:'monitor',
         description:'8-bit monitor',
         inputPins:['IN0','IN1','IN2','IN3','IN4','IN5','IN6','IN7'],

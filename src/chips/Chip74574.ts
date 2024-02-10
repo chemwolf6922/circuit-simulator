@@ -3,7 +3,7 @@ import { InputPin, OutputPin } from "../Pin.js";
 import * as NS from "../NetworkState.js";
 
 class Chip74574 extends Chip{
-    info = {
+    static info = {
         name:'74574',
         description:'Octal D-type flip-flop with tri-state outputs',
         inputPins:['D1','D2','D3','D4','D5','D6','D7','D8','CLK','NOE'],

@@ -6,7 +6,7 @@ type ChipInfo = {
 };
 
 class Chip{
-    info:ChipInfo = {
+    static info:ChipInfo = {
         name:'',
         inputPins:[],
         outputPins:[]

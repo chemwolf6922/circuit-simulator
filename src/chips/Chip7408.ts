@@ -3,7 +3,7 @@ import { InputPin, OutputPin } from "../Pin.js";
 import * as NS from "../NetworkState.js";
 
 class Chip7408 extends Chip {
-    info = {
+    static info = {
         name:'7408',
         description:'Quad 2 input AND gate',
         inputPins:['A1','B1','A2','B2','A3','B3','A4','B4'],

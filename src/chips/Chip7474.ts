@@ -3,7 +3,7 @@ import { InputPin, OutputPin } from "../Pin.js";
 import * as NS from '../NetworkState.js';
 
 class Chip7474 extends Chip {
-    info = {
+    static info = {
         name: '7474',
         description: 'Dual D flip-flop with clear and preset',
         inputPins:['NCLR1','NCLR2','NPRE1','NPRE2','CLK1','CLK2','D1','D2'],

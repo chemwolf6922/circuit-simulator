@@ -3,7 +3,7 @@ import * as NS from "../NetworkState.js";
 import { InputPin, OutputPin } from "../Pin.js";
 
 class ChipToggle extends Chip {
-    info = {
+    static info = {
         name:'toggle',
         inputPins:[],
         outputPins:['OUT']
