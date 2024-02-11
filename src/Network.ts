@@ -2,6 +2,7 @@ import * as NetworkState from "./NetworkState.js"
 import {Pin, OutputPin} from "./Pin.js"
 
 class Network{
+    #pins:Set<Pin> = new Set();
     #drivers:Set<OutputPin> = new Set();
     #priorState:NetworkState.State = NetworkState.State.HIGH_IMPEDANCE;
     #locked:boolean = false;
@@ -27,9 +28,13 @@ class Network{
         }
     }
     connect(pin:Pin){
+        this.#pins.add(pin);
         if(pin instanceof OutputPin){
             this.#drivers.add(pin);
         }
+    }
+    hasPin(pin:Pin){
+        return this.#pins.has(pin);
     }
 };
 

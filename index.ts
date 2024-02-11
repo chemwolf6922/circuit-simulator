@@ -9,11 +9,11 @@ import { Chip74163 } from './src/chips/Chip74163.js';
 import { Chip7474 } from './src/chips/Chip7474.js';
 import { Chip7404 } from './src/chips/Chip7404.js';
 import { Chip7408 } from './src/chips/Chip7408.js';
-import { ChipMonitor } from './src/chips/ChipMonitor.js';
+import { ChipProbe } from './src/chips/ChipProbe.js';
 const CHIPS = {
     ChipSource,
     ChipToggle,
-    ChipMonitor,
+    ChipProbe,
     Chip7400,
     Chip7404,
     Chip7408,

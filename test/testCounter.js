@@ -14,8 +14,8 @@ class TestCircuit extends Circuit {
         this.clk = new CHIPS.ChipToggle();
         this.U1 = new CHIPS.Chip74163();
         this.U2 = new CHIPS.Chip74163();
-        this.T1 = new CHIPS.ChipMonitor();
-        this.T2 = new CHIPS.ChipMonitor();
+        this.T1 = new CHIPS.ChipProbe();
+        this.T2 = new CHIPS.ChipProbe();
         this.chips.add(this.source);
         this.chips.add(this.clk);
         this.chips.add(this.U1);
