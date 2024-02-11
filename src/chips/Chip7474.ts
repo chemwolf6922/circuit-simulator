@@ -6,8 +6,8 @@ class Chip7474 extends Chip {
     static info = {
         name: '7474',
         description: 'Dual D flip-flop with clear and preset',
-        inputPins:['NCLR1','NCLR2','NPRE1','NPRE2','CLK1','CLK2','D1','D2'],
-        outputPins:['Q1','Q2','NQ1','NQ2']
+        inputPins:['NCLR1','NPRE1','CLK1','D1','NCLR2','NPRE2','CLK2','D2'],
+        outputPins:['Q1','NQ1','Q2','NQ2']
     }
     NCLR1: InputPin = new InputPin();
     NCLR2: InputPin = new InputPin();
